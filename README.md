@@ -1,28 +1,32 @@
-# code-editor
+# PyIDLE
 
+PyQt6 asosidagi oddiy Python code editor.
 
-```markdown
-python_editor/
-│── main.py                # Asosiy dastur
-│── editor/
-│   │── __init__.py
-│   │── window.py           # Asosiy oyna (menu, toolbar, layout)
-│   │── editor_widget.py    # Kod yoziladigan joy (QScintilla yoki QTextEdit)
-│   │── file_explorer.py    # Chap tarafdagi fayl struktura oynasi
-│   │── terminal.py         # Ichki terminal
-│   │── settings.py         # Sozlamalar (theme, key bindings)
-│── core/
-│   │── __init__.py
-│   │── syntax.py           # Pygments bilan ranglash
-│   │── autocomplete.py     # Jedi bilan auto-complete
-│   │── runner.py           # Kodni run qilish
-│   │── linter.py           # Kodni tekshirish (flake8, pylint)
-│── themes/
-│   │── dark.qss            # Dark mode style
-│   │── light.qss           # Light mode style
-│── assets/
-│   │── icons/              # Iconlar
-│   │── fonts/              # Maxsus shriftlar
-│── requirements.txt        # Kutubxonalar ro‘yxati
-│── README.md
+## Ishga tushirish
+
+```
+pip install PyQt6
+python main.py
+```
+
+## Imkoniyatlar
+
+- Papka ochish (File > Open Folder) va chapdagi explorer
+- Papka ichida yangi fayl yaratish (Ctrl+N)
+- Tab'lar, saqlash (Ctrl+S / Ctrl+Shift+S), o'zgarishlar belgisi
+- Python ranglash, qator raqamlari, auto-indent
+- Dark theme (`themes/dark.qss`)
+
+## Struktura
+
+```
+main.py                  # kirish nuqtasi
+editor/
+    window.py            # asosiy oyna, menyu, fayl amallari
+    editor_widget.py     # CodeEditor (qator raqamlari, indent)
+    file_explorer.py     # chap panel
+core/
+    syntax.py            # Python syntax highlighter
+themes/
+    dark.qss
 ```
