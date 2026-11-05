@@ -56,3 +56,21 @@ QScrollBar:vertical, QScrollBar:horizontal { background: transparent; border: no
 QScrollBar::handle { background: #424242; border-radius: 4px; min-height: 24px; min-width: 24px; }
 QScrollBar::handle:hover { background: #5A5A5A; }
 QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+
+QListView { background-color: #1F1F1F; color: #CCCCCC; border: 1px solid #3C3C3C; outline: 0; }
+QListView::item:selected { background-color: #0078D4; color: #FFFFFF; }
+
+QWidget#terminalBar { background: #181818; border-top: 1px solid #3C3C3C; }
+QToolButton#terminalButton { background: transparent; color: #8B8B8B; border: none; padding: 2px 8px; }
+QToolButton#terminalButton:hover { color: #CCCCCC; background: #2A2D2E; border-radius: 4px; }
+QPlainTextEdit#terminalOutput { background-color: #181818; color: #CCCCCC; }
+QLabel#terminalPrompt { color: #4EC9B0; background: #181818; }
+QLineEdit#terminalInput { background: #181818; color: #CCCCCC; border: none; border-top: 1px solid #3C3C3C; padding: 4px; }
+
+QWidget#findBar { background: #181818; border-top: 1px solid #3C3C3C; }
+QLineEdit { background: #1E1E1E; color: #CCCCCC; border: 1px solid #3C3C3C; border-radius: 3px; padding: 3px 6px; }
+QPushButton { background: #2A2D2E; color: #CCCCCC; border: none; border-radius: 3px; padding: 4px 10px; }
+QPushButton:hover { background: #0078D4; color: #FFFFFF; }
+QCheckBox, QLabel { color: #CCCCCC; }
+QComboBox, QSpinBox, QFontComboBox { background: #1E1E1E; color: #CCCCCC; border: 1px solid #3C3C3C; padding: 2px 6px; }
+QDialog, QMessageBox, QInputDialog { background: #1F1F1F; }
